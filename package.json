@@ -1,0 +1,22 @@
+{
+  "name": "duck-electric-wire",
+  "version": "1.0.0",
+  "description": "鴨鴨高壓急急棒：十萬伏特大逃亡 (Super Duck Buzz Wire: 100,000 Volts Escape) - 純前端 Canvas 2D 手機直式極限微操避障遊戲",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node verify_course.mjs"
+  },
+  "keywords": [
+    "game",
+    "canvas-2d",
+    "web-audio-api",
+    "buzz-wire",
+    "retro-arcade",
+    "mobile-game",
+    "procedural-audio"
+  ],
+  "author": "apple595201908",
+  "license": "MIT"
+}
