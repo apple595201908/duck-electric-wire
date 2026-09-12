@@ -26,21 +26,21 @@ class DuckCourse {
 
     this.zones = [
       { name: 'Stage 0: ⚡ 起跑衝刺整備區 (0:00)', startY: 0, endY: 1350, color: '#10b981', danger: 0.1 },
-      { name: 'Stage 1: 🌪️ 巨大三叉旋轉鋼樑初陣 (0:12)', startY: 1350, endY: 3400, color: '#00f0ff', danger: 0.2 },
-      { name: 'Stage 2: ⚙️ 雙三叉對向咬合齒輪狹道 (0:31)', startY: 3400, endY: 5450, color: '#38bdf8', danger: 0.25 },
-      { name: 'Stage 3: 💥 巨大黑黃液壓對衝重型活塞 (0:50)', startY: 5450, endY: 7500, color: '#60a5fa', danger: 0.3 },
-      { name: 'Stage 4: 🏗️ 巨大金屬起重懸臂橫掃閘 (1:08)', startY: 7500, endY: 9550, color: '#818cf8', danger: 0.35 },
-      { name: 'Stage 5: 🔔 巨大重金屬破壞球鐘擺海 (1:27)', startY: 9550, endY: 11600, color: '#a78bfa', danger: 0.4 },
-      { name: 'Stage 6: 🌪️ 逆向旋轉三叉巨樑逆流陣 (1:45)', startY: 11600, endY: 13650, color: '#c084fc', danger: 0.45 },
-      { name: 'Stage 7: ⚔️ 斜向斷頭鍘與三叉雙重包夾 (2:04)', startY: 13650, endY: 15700, color: '#e879f9', danger: 0.5 },
-      { name: 'Stage 8: 🌪️ 對向雙輪咬合與起重懸臂 (2:23)', startY: 15700, endY: 17750, color: '#f43f5e', danger: 0.55 },
-      { name: 'Stage 9: 💥 液壓重衝活塞與巨型鐘擺 (2:41)', startY: 17750, endY: 19800, color: '#fb7185', danger: 0.6 },
-      { name: 'Stage 10: 🌪️ 正逆雙三叉連環交錯陣 (3:00)', startY: 19800, endY: 21850, color: '#f87171', danger: 0.7 },
-      { name: 'Stage 11: ⚙️ 雙星雙軌咬合與滑移斷頭鍘 (3:19)', startY: 21850, endY: 23900, color: '#fb923c', danger: 0.75 },
-      { name: 'Stage 12: 🏗️ 雙向懸臂拍擊與高速旋翼 (3:37)', startY: 23900, endY: 25950, color: '#fbbf24', danger: 0.8 },
-      { name: 'Stage 13: 🌪️ 逆轉巨型三叉鋼樑極限群 (3:56)', startY: 25950, endY: 28000, color: '#facc15', danger: 0.85 },
-      { name: 'Stage 14: 🚨 雙三叉咬合狂暴過載區 (4:15)', startY: 28000, endY: 30050, color: '#ef4444', danger: 0.9 },
-      { name: 'Stage 15: 💥 四分鐘極限死鬥終極旋轉海 (4:33)', startY: 30050, endY: 32500, color: '#dc2626', danger: 1.0 },
+      { name: 'Stage 1: 🌪️ 巨型三叉旋轉鋼樑與交錯橫鋼初陣 (0:12)', startY: 1350, endY: 3400, color: '#00f0ff', danger: 0.2 },
+      { name: 'Stage 2: ⚙️ 雙三叉咬合齒輪與波浪滑移橫桿狹道 (0:31)', startY: 3400, endY: 5450, color: '#38bdf8', danger: 0.25 },
+      { name: 'Stage 3: 💥 巨型黑黃液壓活塞與交錯之字長桿 (0:50)', startY: 5450, endY: 7500, color: '#60a5fa', danger: 0.3 },
+      { name: 'Stage 4: 🏗️ 巨型起重懸臂橫掃閘與對向滑軌橫桿 (1:08)', startY: 7500, endY: 9550, color: '#818cf8', danger: 0.35 },
+      { name: 'Stage 5: 🔔 巨型重金屬破壞球與階梯瀑布格柵 (1:27)', startY: 9550, endY: 11600, color: '#a78bfa', danger: 0.4 },
+      { name: 'Stage 6: 🌪️ 逆向旋轉三叉巨樑與高速扭動加長桿 (1:45)', startY: 11600, endY: 13650, color: '#c084fc', danger: 0.45 },
+      { name: 'Stage 7: ⚔️ 斜向滑移斷頭鍘與交錯橫桿雙重突圍 (2:04)', startY: 13650, endY: 15700, color: '#e879f9', danger: 0.5 },
+      { name: 'Stage 8: 🌪️ 雙輪咬合齒輪與液壓重衝夾桿 (2:23)', startY: 15700, endY: 17750, color: '#f43f5e', danger: 0.55 },
+      { name: 'Stage 9: 💥 液壓重型壓縮與巨型破壞球復合陣 (2:41)', startY: 17750, endY: 19800, color: '#fb7185', danger: 0.6 },
+      { name: 'Stage 10: 🌪️ 正逆雙三叉連環交錯與波浪橫桿 (3:00)', startY: 19800, endY: 21850, color: '#f87171', danger: 0.7 },
+      { name: 'Stage 11: ⚙️ 雙軌滑移斷頭鍘與起重懸臂 (3:19)', startY: 21850, endY: 23900, color: '#fb923c', danger: 0.75 },
+      { name: 'Stage 12: 🏗️ 雙向懸臂拍擊與高速對向滑軌 (3:37)', startY: 23900, endY: 25950, color: '#fbbf24', danger: 0.8 },
+      { name: 'Stage 13: 🌪️ 逆轉巨型三叉鋼樑極限群與加長橫鋼陣 (3:56)', startY: 25950, endY: 28000, color: '#facc15', danger: 0.85 },
+      { name: 'Stage 14: 🚨 雙三叉咬合與全機關狂暴過載區 (4:15)', startY: 28000, endY: 30050, color: '#ef4444', danger: 0.9 },
+      { name: 'Stage 15: 💥 四分鐘極限死鬥終極旋轉海與十萬伏特橫鋼群 (4:33)', startY: 30050, endY: 32500, color: '#dc2626', danger: 1.0 },
       { name: '終點：🏆 十萬伏特特工鴨神殿堂 (5:00)', startY: 32500, endY: 33000, color: '#ffd700', danger: 0.0 }
     ];
 
@@ -91,58 +91,101 @@ class DuckCourse {
     return { left: 30, right: 370 };
   }
 
+  // 最佳理想連續動態閃避中線（靈活蛇行扭動曲線，左右擺幅約 70~90px）
+  getIdealPathX(y) {
+    return 200 + 70 * Math.sin(y * 0.011) + 20 * Math.sin(y * 0.0043 + 1.5);
+  }
+
   // ===========================================================================
-  // 鋪設 100% 人類反應合理性之「巨大動態機關」33,000px 賽道
+  // 鋪設 100% 人類反應合理性之「巨大動態機關」與「加長橫鋼桿」豐富賽道
   // ===========================================================================
   populateMechanisms() {
     this.mechanisms = [];
-    const stepY = 175; // 每 175px 一處震撼的大型主題機關 (約 1.6 秒一次大遭遇，無零碎短棒)
+    const stepY = 155; // 每 155px 一處震撼主題機關 (全賽道 207 組，節奏緊湊無冷場)
     let mCount = 0;
 
     for (let y = 450; y <= 32500; y += stepY) {
       mCount++;
-      const stageIdx = Math.min(15, Math.floor((y - 1350) / 2050));
-      const typeChoice = mCount % 8;
+      const idealX = this.getIdealPathX(y);
+      const typeChoice = mCount % 13;
 
       if (typeChoice === 0) {
-        // 1. 巨大三叉旋轉鋼樑 (正轉 CW，居中，臂長 80px，兩側各有 90px 寬裕通道！)
-        this.mechanisms.push(new window.GiantTriSpokeRotor({
-          cy: y, cx: 200, length: 80, speed: 0.52, startAngle: (mCount * 1.1) % 6.28
+        // 1. 巨型加長左右交錯橫鋼桿 (ElongatedSlalomRod) - 跨越中線，強烈左右扭動感
+        const isRight = idealX >= 200;
+        const side = isRight ? 'left' : 'right';
+        const tipX = isRight
+          ? Math.min(235, Math.max(185, idealX - 55))
+          : Math.max(165, Math.min(215, idealX + 55));
+        this.mechanisms.push(new window.ElongatedSlalomRod({
+          cy: y, side, tipX, thickness: 13, swayAmp: 8, swayFreq: 1.0, color: '#00f0ff', style: 'hazard'
         }));
       } else if (typeChoice === 1) {
-        // 2. 巨大三叉旋轉鋼樑 (逆轉 CCW，偏左側 cx=150，右側保留 145px 寬廣通衢大道！)
+        // 2. 巨大三叉旋轉鋼樑 (正轉 CW) - 依據避障路徑偏置，開闢 155px 逃生通道
+        const cx = idealX >= 200 ? 140 : 260;
         this.mechanisms.push(new window.GiantTriSpokeRotor({
-          cy: y, cx: 150, length: 75, speed: -0.52, startAngle: (mCount * 1.3) % 6.28
+          cy: y, cx, length: 75, speed: 0.50, startAngle: (mCount * 1.1) % 6.28
         }));
       } else if (typeChoice === 2) {
-        // 3. 巨大重型液壓對衝活塞 (最小開口 155px，超過小鴨 30px 直徑 5 倍，絕不壓殺！)
-        this.mechanisms.push(new window.GiantHydraulicCompactor({
-          cy: y, period: 3.8, phase: mCount * 0.4
+        // 3. 巨型 S 型波浪滑移金屬套管陣 (SlalomWaveBars) - 波浪位移橫桿，155px 寬裕走廊
+        this.mechanisms.push(new window.SlalomWaveBars({
+          cy: y, baseCenterX: idealX, gapWidth: 155, amplitude: 25, freq: 0.9, color: '#38bdf8', style: 'conduit'
         }));
       } else if (typeChoice === 3) {
-        // 4. 巨大三叉旋轉鋼樑 (正轉 CW，偏右側 cx=250，左側保留 145px 寬廣通衢大道！)
-        this.mechanisms.push(new window.GiantTriSpokeRotor({
-          cy: y, cx: 250, length: 75, speed: 0.52, startAngle: (mCount * 0.9) % 6.28
-        }));
-      } else if (typeChoice === 4) {
-        // 5. 巨大對向雙三叉旋轉鋼樑 (縱向錯位 S 型門，兩側各自保留 158px 順暢穿梭走廊！)
+        // 4. 巨大對向雙三叉旋轉鋼樑 (TwinCounterRotors) - 縱向錯位 90px，S 型齒輪咬合門
         this.mechanisms.push(new window.TwinCounterRotors({
           cy: y, cx1: 140, cx2: 260
         }));
+      } else if (typeChoice === 4) {
+        // 5. 巨型加長左右交錯橫鋼桿 (ElongatedSlalomRod - 反向對稱) - 經典鍍鉻鏡面質感
+        const isRight = idealX >= 200;
+        const side = isRight ? 'left' : 'right';
+        const tipX = isRight
+          ? Math.min(230, Math.max(180, idealX - 50))
+          : Math.max(170, Math.min(220, idealX + 50));
+        this.mechanisms.push(new window.ElongatedSlalomRod({
+          cy: y, side, tipX, thickness: 13, swayAmp: 8, swayFreq: 1.1, color: '#fbbf24', style: 'chrome'
+        }));
       } else if (typeChoice === 5) {
-        // 6. 巨大重金屬懸臂揮擊閘 (臂長 145px，對側永遠有 195px 完整半場通衢！)
-        this.mechanisms.push(new window.GiantCantileverBoom({
-          cy: y, side: (mCount % 2 === 0 ? 'left' : 'right'), phase: mCount * 0.5
+        // 6. 巨大黑黃液壓重型壓縮活塞 (GiantHydraulicCompactor) - 最小開口 155px，絕無壓殺
+        this.mechanisms.push(new window.GiantHydraulicCompactor({
+          cy: y, period: 3.8, phase: mCount * 0.4
         }));
       } else if (typeChoice === 6) {
-        // 7. 巨大三叉旋轉鋼樑 (逆轉 CCW，居中，臂長 80px，兩側各有 90px 寬裕通道！)
-        this.mechanisms.push(new window.GiantTriSpokeRotor({
-          cy: y, cx: 200, length: 80, speed: -0.50, startAngle: (mCount * 1.7) % 6.28
+        // 7. 巨型對向滑移雙聯軌道橫桿 (ReciprocatingSlideBars) - 雙軌平滑開闔
+        this.mechanisms.push(new window.ReciprocatingSlideBars({
+          cy: y, gapWidth: 156, period: 3.6, color: '#e879f9', style: 'double_rail'
         }));
-      } else {
-        // 8. 巨大重金屬鐘擺破壞球 (中心蕩漾，左右兩側各有 110px 永久避風港！)
+      } else if (typeChoice === 7) {
+        // 8. 巨大三叉旋轉鋼樑 (逆轉 CCW) - 反向破壞慣性節奏，提供 155px 逃生大道
+        const cx = idealX >= 200 ? 140 : 260;
+        this.mechanisms.push(new window.GiantTriSpokeRotor({
+          cy: y, cx, length: 75, speed: -0.50, startAngle: (mCount * 1.3) % 6.28
+        }));
+      } else if (typeChoice === 8) {
+        // 9. 巨型之字交錯橫桿走廊 (ZigzagChicaneBars) - 鋸齒折線急轉橫桿
+        this.mechanisms.push(new window.ZigzagChicaneBars({
+          cy: y, gapWidth: 160, color: '#f43f5e', style: 'serrated'
+        }));
+      } else if (typeChoice === 9) {
+        // 10. 巨大重金屬起重懸臂橫掃鋼樑 (GiantCantileverBoom) - 對側保留 195px 完整半場通衢
+        const side = idealX >= 200 ? 'left' : 'right';
+        this.mechanisms.push(new window.GiantCantileverBoom({
+          cy: y, side, phase: mCount * 0.5
+        }));
+      } else if (typeChoice === 10) {
+        // 11. 巨型階梯瀑布交錯格柵 (WaterfallConveyorBars) - 階梯式滑動橫格柵
+        this.mechanisms.push(new window.WaterfallConveyorBars({
+          cy: y, gapWidth: 155, color: '#facc15', style: 'conduit'
+        }));
+      } else if (typeChoice === 11) {
+        // 12. 巨大重金屬鐘擺破壞球 (GiantHeavyPendulum) - 中心蕩漾，左右各 110px 避風港
         this.mechanisms.push(new window.GiantHeavyPendulum({
           cy: y, phase: mCount * 0.3
+        }));
+      } else {
+        // 13. 巨大斜向滑移斷頭鍘 (GiantDiagonalSlicer) - 156px 寬裕斜切滑道
+        this.mechanisms.push(new window.GiantDiagonalSlicer({
+          cy: y, period: 3.8, phase: mCount * 0.4
         }));
       }
     }

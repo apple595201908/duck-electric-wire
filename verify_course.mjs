@@ -41,26 +41,38 @@ const totalTargetY = 32500;
 // -----------------------------------------------------------------------------
 // 測試 1: 巨大動態機關主導性與排布均勻度檢驗
 // -----------------------------------------------------------------------------
-console.log('\n--- [檢驗 1: 巨大動態機關結構與主導性統計] ---');
+console.log('\n--- [檢驗 1: 巨大動態機關與加長橫鋼桿結構多樣性統計] ---');
 const mechList = course.mechanisms.slice().sort((a, b) => a.cy - b.cy);
 console.log(`全賽道大型主機關總數: ${mechList.length} 組 (無零碎短棒，純大型動態主機關)`);
 
+const slalomRods = mechList.filter(m => m.type === 'slalom_rod');
 const triSpokeRotors = mechList.filter(m => m.type === 'tri_spoke_rotor');
+const slalomWaves = mechList.filter(m => m.type === 'slalom_wave');
 const twinRotors = mechList.filter(m => m.type === 'twin_rotors');
 const compactors = mechList.filter(m => m.type === 'giant_compactor');
+const slideBars = mechList.filter(m => m.type === 'slide_bars');
+const chicaneBars = mechList.filter(m => m.type === 'zigzag_chicane');
 const cantilevers = mechList.filter(m => m.type === 'giant_cantilever');
+const waterfallBars = mechList.filter(m => m.type === 'waterfall_cascade');
 const pendulums = mechList.filter(m => m.type === 'giant_pendulum');
+const slicers = mechList.filter(m => m.type === 'giant_slicer');
 
 const cwRotors = triSpokeRotors.filter(m => m.speed > 0).length;
 const ccwRotors = triSpokeRotors.filter(m => m.speed < 0).length;
-const totalRotorEncounters = triSpokeRotors.length + twinRotors.length;
 
-console.log(`- 巨大三叉旋轉鋼樑 (單輪): ${triSpokeRotors.length} 組 (正轉 CW: ${cwRotors} 組, 逆轉 CCW: ${ccwRotors} 組)`);
+console.log(`【橫鋼與滑移格柵類】:`);
+console.log(`- 巨型加長左右交錯橫鋼桿 (ElongatedSlalomRod): ${slalomRods.length} 組`);
+console.log(`- 巨型 S 型波浪滑移金屬套管陣 (SlalomWaveBars): ${slalomWaves.length} 組`);
+console.log(`- 巨型對向滑移雙聯軌道橫桿 (ReciprocatingSlideBars): ${slideBars.length} 組`);
+console.log(`- 巨型之字交錯橫桿走廊 (ZigzagChicaneBars): ${chicaneBars.length} 組`);
+console.log(`- 巨型階梯瀑布交錯格柵 (WaterfallConveyorBars): ${waterfallBars.length} 組`);
+console.log(`【巨大動態旋轉、咬合、活塞、懸臂與鐘擺類】:`);
+console.log(`- 巨大三叉旋轉鋼樑 (單輪 CW/CCW): ${triSpokeRotors.length} 組 (正轉 CW: ${cwRotors} 組, 逆轉 CCW: ${ccwRotors} 組)`);
 console.log(`- 巨大對向雙三叉旋轉齒輪 (雙輪咬合): ${twinRotors.length} 組`);
-console.log(`- 旋轉鋼樑類總佔比: ${totalRotorEncounters} / ${mechList.length} (${((totalRotorEncounters / mechList.length) * 100).toFixed(1)}%) -> ★ 絕對主導地位！`);
 console.log(`- 巨大黑黃液壓重型壓縮活塞: ${compactors.length} 組`);
-console.log(`- 巨大重金屬懸臂起重鋼樑: ${cantilevers.length} 組`);
-console.log(`- 巨大重力鐘擺破壞球: ${pendulums.length} 組`);
+console.log(`- 巨大重金屬起重懸臂鋼樑: ${cantilevers.length} 組`);
+console.log(`- 巨大重金屬鐘擺破壞球: ${pendulums.length} 組`);
+console.log(`- 巨大斜向滑移斷頭鍘: ${slicers.length} 組`);
 
 const gaps = [];
 const blankVoids = [];
